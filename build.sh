@@ -1,5 +1,5 @@
 #!/bin/bash
-cp Dockerfile /opt/sam
+sudo cp Dockerfile /opt/sam
 ls /opt/sam
  cd /opt/sam
 buildnumber=$1
