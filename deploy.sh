@@ -2,7 +2,7 @@
 buildnumber=$1
 exists=$(docker service ls|grep docker)
 if [ ! "$exists"]; then
-docker service create --name subbu -p 8889:8080 kusupudiswamy/docker:$buildnumber
+docker service create --name s -p 8889:8080 kusupudiswamy/docker:$buildnumber
 else
-docker service update subbu --image kusupudiswamy/docker:$buildnumber
+docker service update s --image kusupudiswamy/docker:$buildnumber
 fi
