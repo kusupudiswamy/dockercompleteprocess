@@ -1,4 +1,7 @@
 #!/bin/bash
+cp Dockerfile /opt/sam
+ls /opt/sam
+ cd /opt/sam
 buildnumber=$1
 pwd
 sudo docker build -t  docker:$buildnumber /opt/sam
